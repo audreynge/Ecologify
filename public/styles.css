@@ -233,10 +233,15 @@ video {
     height: auto;
 }
 
+.bg-lightgreen{
+    background-color: #D1F8D0;
+}
 
-
-body{
+.urbanist {
     font-family: 'Urbanist', sans-serif;
+}
+
+.home-body {
     background-image: url('assets/homepagebg.svg');
     background-size: cover;
     background-position: center center;
@@ -344,7 +349,7 @@ header {
     justify-content: center;
     align-items: center;
     text-align: center;
-    margin-top: 30px;
+    margin-top: 15px;
 }
 
 .icon-container {
@@ -354,8 +359,7 @@ header {
 }
 
 .title {
-    margin: 0;
-    color:#537E45;
+    color: #537E45;
     font-weight: 700;
     font-size: 110px;
     text-shadow: -3px 4px 5px rgba(0, 0, 0, 0.3);
@@ -364,6 +368,7 @@ header {
 #title-description{
     font-size: 24px;
     font-weight: 300;
+    margin-top:-10px;
 }
 
 .get-started-button {
@@ -385,3 +390,129 @@ header {
     color: white;
 }
 
+.features-title {
+    color: #5597C6;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 2.5rem;
+    font-size: 50px;
+    text-shadow: -3px 4px 5px rgba(0, 0, 0, 0.15);
+}
+
+.feature-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-left: 2.5rem;
+    margin-right: 2.5rem;
+    margin-top: 1.5rem;
+    margin-bottom: 7rem;
+    gap: 2rem;
+}
+
+.feature {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 2rem 1rem 2rem;
+    border-radius: 25px;
+    border: none;
+    background-color: white;
+    box-shadow: -3px 4px 5px rgba(0, 0, 0, 0.3);
+    width: 24rem;
+    height: 18rem;
+    transition: transform 0.4s ease;
+}
+
+.feature:hover {
+    transform: translateY(-5px);
+}
+
+footer {
+    background-color: #5597C6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:auto;
+    height: 150px;
+}
+
+.footer-icon-container {
+    color:white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color:white;
+    margin-bottom: 0.5rem;
+}
+
+.footer-icon {
+    scale:70%;
+    
+}
+
+.footer-icon-item {
+    display: flex;
+    display: inline-block;
+    font-weight: 600;
+    font-size: 25px;
+}
+
+.footer-item-container {
+    color:white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.footer-item {
+    display: inline-block;
+    margin-right: 1.3rem;
+    margin-left: 1.3rem;
+    font-size: 20px;
+}
+
+.footer-item a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.4s ease
+}
+
+.footer-item a:hover {
+    color: #C9F6C8;
+}
+
+
+/* greenhousegas.html */
+
+.ghg-title {
+    margin-top: 1.5rem;
+    color: #537E45;
+    font-weight: 600;
+    font-size: 80px;
+    text-shadow: -3px 4px 5px rgba(0, 0, 0, 0.3);
+}
+
+.ghg-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    margin-top: 7rem;
+    font-weight: 600;
+    font-size: 50px;
+}
+
+.year {
+    height: 13rem;
+    width: 13rem;
+    border-radius: 50%;
+    border: none;
+    background-color: #729666;
+    color: white;
+}
