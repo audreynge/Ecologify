@@ -402,7 +402,7 @@ header {
 .feature-container {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-evenly;
     margin-left: 2.5rem;
     margin-right: 2.5rem;
     margin-top: 1.5rem;
