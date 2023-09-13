@@ -382,7 +382,6 @@ header {
     font-size: 20px;    
     border: none;
     transition: transform 0.4s ease;
-    
 }
 
 .get-started-button:hover { /* move button up and change text to white when user hovers over it */
@@ -490,11 +489,21 @@ footer {
 /* greenhousegas.html */
 
 .ghg-title {
-    margin-top: 1.5rem;
+    margin-top: 1rem;
     color: #537E45;
     font-weight: 600;
     font-size: 80px;
     text-shadow: -3px 4px 5px rgba(0, 0, 0, 0.3);
+}
+
+.year-ghg-data{
+    position: absolute;
+    top: 280px;
+    width: 400px;
+    font-weight: 200;
+    font-size: 18px;
+    transition: opacity 0.4s;
+    opacity: 0;
 }
 
 .ghg-container {
@@ -503,16 +512,74 @@ footer {
     justify-content: space-around;
     padding-left: 5rem;
     padding-right: 5rem;
-    margin-top: 7rem;
+    margin-top: 8.5rem;
     font-weight: 600;
     font-size: 50px;
 }
 
-.year {
+.year-button {
     height: 13rem;
     width: 13rem;
     border-radius: 50%;
     border: none;
     background-color: #729666;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.year-button:hover {
+    background-color: #547c54;
+}
+
+.piechart-2020 {
+    background-image: conic-gradient(
+        #5E5F5E 98.9%, /*co2*/
+        #989A21 1.1%   /*methane*/
+    );
+}
+
+.piechart-2021 {
+    background-image: conic-gradient(
+        #5E5F5E 99.1%, /*co2*/
+        #989A21 0.9%   /*methane*/
+    );
+}
+
+.piechart-2022 {
+    background-image: conic-gradient(
+        #5E5F5E 99.6%, /*co2*/
+        #989A21 0.4%   /*methane*/
+    );
+}
+
+.continue-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.continue-button {
+    margin-top: 30px;
+    background-color: #729666;
+    text-align: center;
+    border-radius: 15px;
+    padding: 10px;
+    width: 130px;
+    color: #EDEAEA;
+    font-weight: 600;
+    font-size: 20px;    
+    border: none;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    transition: transform 0.4s ease;
+}
+
+.continue-button:hover { /* move button up and change text to white when user hovers over it */
+    transform: translateY(-5px);
     color: white;
 }
