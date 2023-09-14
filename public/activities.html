@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ecologify</title>
+    <link href="styles.css" rel = "stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Urbanist:wght@100;200;300;400;500;600;700;800&display=swap');
+    </style> 
+</head>
+
+<body class="bg-lightgreen urbanist">
+    <header>
+        <div></div>
+        <nav> <!--side menu, logo + name, login, about, contact-->
+            <div class="menu-icon">
+                <span class="menu-line"></span>
+                <span class="menu-line"></span>
+                <span class="menu-line"></span>
+            </div>
+
+            <a href="index.html" class="header-icon-container">
+                <img class="header-icon-item header-icon" src="assets/earthicon.svg">
+                <p class="header-icon-item">ecologify</p>
+            </a>
+
+            <ul class="header-item-container">
+                <li class="header-item"><a href = "">Login</a></li>
+                <li class="header-item"><a href = "about.html">About</a></li>
+                <li class="header-item"><a href = "">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="title-container">
+        <h1 class="ghg-title">Activities <span style="color: #62A8E9;">You</span> Can Do</h1>
+        <p id="title-description">click on a greenhouse gas to see what you can do to lower emissions</p>
+        
+        <p class="activity-info"></p>
+    </div>
+
+    <div class="activities-container">
+        <button class="ghg-button" greenhouse-gas="carbon-dioxide">Carbon Dioxide</button>
+        <button class="ghg-button" greenhouse-gas="methane">Methane</button>
+        <button class="ghg-button" greenhouse-gas="nitrous-oxide">Nitrous Oxide</button>
+    </div>
+    <div class="continue-container">
+        <a href="index.html" class="continue-button" id="continueButton" style="display: none; width: 150px; margin-bottom: 50px;">Return to home</a>
+    </div>
+    <script src="activities.js"></script>
+
+
+</body>
+
+</html>

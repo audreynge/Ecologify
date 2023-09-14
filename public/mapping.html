@@ -4,13 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ecologify</title>
-    <link href="styles.css" rel = "stylesheet">
+    <link href="styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"/>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Urbanist:wght@100;200;300;400;500;600;700;800&display=swap');
     </style>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 
-<body class="home-body urbanist">
+<body class="bg-lightgreen urbanist">
     <header>
         <div></div>
         <nav> <!--side menu, logo + name, login, about, contact-->
@@ -26,12 +28,31 @@
             </a>
 
             <ul class="header-item-container">
-                <li class="header-item"><a href = "">Login</a></li>
-                <li class="header-item"><a href = "about.html">About</a></li>
-                <li class="header-item"><a href = "">Contact</a></li>
+                <li class="header-item"><a href="">Login</a></li>
+                <li class="header-item"><a href="about.html">About</a></li>
+                <li class="header-item"><a href="">Contact</a></li>
             </ul>
         </nav>
     </header>
 
+    <div class="title-container">
+        <h1 class="ghg-title">Air Quality Index</h1>
+        <p id="title-description">As air pollution rises, so does the air quality index.<br>Greenhouse gases are a contributing factor to air pollution.</p>
+        
+        <p class="year-ghg-data"></p>
+    </div>
+
+    <div id='map' style="height:600px; margin: 40px; border-radius: 25px;"> 
+        <link rel="stylesheet"  href="http://cdn.leafletjs.com/leaflet-0.7.5/leaflet.css"/>  
+        <script src="http://cdn.leafletjs.com/leaflet-0.7.5/leaflet.js"></script>  
+        <script src="mapping.js"></script>
+    </div>
+    
+    <div style="display:flex; text-align: center; justify-content: center; margin-bottom: 50px; margin-top: -30px;">
+        <a href="activities.html" class="get-started-button" style="width:130px;">Continue</a>
+    </div>
+    
+
 </body>
 </html>
+

@@ -26,7 +26,7 @@ function fadeInContinueButton() {
     continueButton.style.display = 'block';
     setTimeout(() => {
         continueButton.style.opacity = 1;
-    }, 10); // You can adjust the delay if needed
+    }, 10);
 }
 
 
